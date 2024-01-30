@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 const frameMetadata = getFrameMetadata({
   buttons: ['Start breathing exercise'],
-  image: 'https://meditation-frame.vercel.app/park-1.png',
+  image: 'https://meditation-frame.vercel.app/start.png',
   post_url: 'https://meditation-frame.vercel.app/api/frame',
 });
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Deep Breathing',
     description: 'Take a Breath',
-    images: ['https://meditation-frame.vercel.app/park-1.png'],
+    images: ['https://meditation-frame.vercel.app/start.png'],
   },
   other: {
     ...frameMetadata,
