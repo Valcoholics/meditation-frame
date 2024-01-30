@@ -2,18 +2,18 @@ import { getFrameMetadata } from '@coinbase/onchainkit';
 import type { Metadata } from 'next';
 
 const frameMetadata = getFrameMetadata({
-  buttons: ['Next image'],
-  image: 'https://zizzamia.xyz/park-1.png',
-  post_url: 'https://zizzamia.xyz/api/frame',
+  buttons: ['Start breathing exercise'],
+  image: 'https://meditation-frame.vercel.app/park-1.png',
+  post_url: 'https://meditation-frame.vercel.app/api/frame',
 });
 
 export const metadata: Metadata = {
-  title: 'zizzamia.xyz',
-  description: 'LFG',
+  title: 'Deep Breathing',
+  description: 'Take a Breath',
   openGraph: {
-    title: 'zizzamia.xyz',
-    description: 'LFG',
-    images: ['https://zizzamia.xyz/park-1.png'],
+    title: 'Deep Breathing',
+    description: 'Take a Breath',
+    images: ['https://meditation-frame.vercel.app/park-1.png'],
   },
   other: {
     ...frameMetadata,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>zizzamia.xyz</h1>
+      <h1>Deep Breathing</h1>
     </>
   );
 }
