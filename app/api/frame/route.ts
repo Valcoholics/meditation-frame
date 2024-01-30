@@ -7,7 +7,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="https://meditation-frame.vercel.app/breathe.gif" />
     <meta property="fc:frame:button:1:action" content="navigate"/> 
-    <meta property="fc:frame:button:1:url" content="/"/>
+    <meta property="fc:frame:button:1:url" content="/api/frame"/>
   </head></html>`);
 
 }
