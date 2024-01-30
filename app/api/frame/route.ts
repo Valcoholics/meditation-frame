@@ -22,7 +22,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
 export async function POST(req: NextRequest): Promise<Response> {
 
   if(req.url === '/api/frame') {
-    return NextResponse.navigate(new URL('/', req.url)); 
+    return NextResponse.redirect(new URL('/', req.url)); 
   }
 
   return getResponse(req);
