@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>Deep Breathing</h1>
+      <h1></h1>
     </>
   );
 }
