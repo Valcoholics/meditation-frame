@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from 'next/server';
 // Defining an async function to handle responses
 async function getResponse(req: NextRequest): Promise<NextResponse> {
   // Check if the request includes a parameter indicating the current button state
-  const currentButtonState = req.parameters && req.parameters['fc:frame:button:1'];
+  const currentButtonState = (req as any).parameters && (req as any).parameters['fc:frame:button:1'];
 
   // Determine the new button state and set the image URL accordingly
   const newButtonState = currentButtonState === 'Start breathing exercise' ? 'Stop' : 'Start breathing exercise';
