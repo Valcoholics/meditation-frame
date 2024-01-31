@@ -9,7 +9,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   //---------------------------------/
   // Get account address 
 
-  let accountAddress: string | undefined = '';
+/*let accountAddress: string | undefined = '';
   
   const body: FrameRequest = await req.json();
   const { isValid, message } = await getFrameMessage(body);
@@ -20,7 +20,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     } catch (err) {
       console.error(err);
     }
-  }
+  } */
 
   //---------------------------------/
   // Dynamic post URL based on the action parameter
