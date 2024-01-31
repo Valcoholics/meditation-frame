@@ -1,4 +1,4 @@
-import { FrameRequest, getFrameAccountAddress, getFrameMessage } from '@coinbase/onchainkit';
+//import { FrameRequest, getFrameAccountAddress, getFrameMessage } from '@coinbase/onchainkit';
 import { NextRequest, NextResponse } from 'next/server';
 
 const NEXT_PUBLIC_URL = 'https://meditation-frame.vercel.app';
