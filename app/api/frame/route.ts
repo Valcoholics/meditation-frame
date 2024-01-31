@@ -22,10 +22,19 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     }
   } */
 
+  /*
   //---------------------------------/
   // Dynamic post URL based on the action parameter
 
   const postUrl = action === 'start'
+    ? 'https://meditation-frame.vercel.app/api/frame/start/'
+    : 'https://meditation-frame.vercel.app/api/frame/stop/';
+
+  */
+
+  const isStart = req.url.endsWith('start');
+
+  const postUrl = isStart
     ? 'https://meditation-frame.vercel.app/api/frame/start/'
     : 'https://meditation-frame.vercel.app/api/frame/stop/';
 
