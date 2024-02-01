@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 const NEXT_PUBLIC_URL = 'https://meditation-frame.vercel.app';
 type Action = 'start' | 'stop';
 
-async function getResponse(req: NextRequest): Promise<NextResponse> {
+async function getResponse(req: NextRequest, action: Action): Promise<NextResponse> {
 
   //---------------------------------/
   // Get account address 
@@ -44,4 +44,6 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   </head></html>`);
 }
 
-export const dynamic = 'force-dynamic';
+export { getResponse }; 
+
+export const dynamic = 'force-dynamic'; 
