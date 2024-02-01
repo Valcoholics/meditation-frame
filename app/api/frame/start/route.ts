@@ -6,3 +6,4 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 }
 
 
+export const dynamic = 'force-dynamic';
